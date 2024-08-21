@@ -84,21 +84,21 @@ After the configuration, your Zyxel Access Points will be visible in the Home As
 ## Troubleshooting
 If you encounter any issues during setup or monitoring, ensure that:
 
-Your access point’s SNMP service is enabled.
-The correct IP address and community string are used.
-Your device is reachable over the network from your Home Assistant instance.
+Your access point’s SNMP service is enabled.  
+The correct IP address and community string are used.  
+Your device is reachable over the network from your Home Assistant instance.  
 For detailed troubleshooting, please refer to the Zyxel Access Point manual or the Home Assistant community forums.
 
 ## Contributing
-We welcome contributions to enhance this integration further.
-If you have any feature requests or bug reports, feel free to open an issue or submit a pull request.
-Ensure that your code follows the contribution guidelines provided in the repository.
+We welcome contributions to enhance this integration further.  
+If you have any feature requests or bug reports, feel free to open an issue or submit a pull request.  
+Ensure that your code follows the contribution guidelines provided in the repository.  
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for more details.  
 
 ## Acknowledgments
-Special thanks to the Home Assistant community and Zyxel for providing extensive documentation and support for SNMP.    
+Special thanks to the Home Assistant community and Zyxel for providing extensive documentation and support for SNMP.      
 
   
 
