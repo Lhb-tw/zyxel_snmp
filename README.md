@@ -66,6 +66,9 @@ Restart Home Assistant: Restart your Home Assistant instance to load the custom 
   
 Validate & Save: The integration will validate the inputs and, if successful, create the entities for your device.  
 
+
+ ![configuration.png](images/configuration.png)
+
  ### Step 3: Monitor Your Devices
 After the configuration, your Zyxel Access Points will be visible in the Home Assistant dashboard. You can now monitor the following metrics:
   
@@ -74,7 +77,10 @@ After the configuration, your Zyxel Access Points will be visible in the Home As
 ##### CPU Usage: Displays the current CPU utilization percentage.  
 ##### Memory Usage: Shows the current memory usage percentage.  
 ##### Network Interface Status: Monitor the status of 2.4GHz and 5GHz network interfaces.   
-  
+
+
+   ![result.png](images/result.png)
+   
 ## Troubleshooting
 If you encounter any issues during setup or monitoring, ensure that:
 
