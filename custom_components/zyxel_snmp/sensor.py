@@ -28,10 +28,12 @@ _LOGGER = logging.getLogger(__name__)
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
     """Set up SNMP sensors."""
-    update_interval = config_entry.data.get(
-        "update_interval", 30
-    )  # 取得使用者輸入的更新間隔
-    coordinator = SnmpDataUpdateCoordinator(hass, config_entry.data, update_interval)
+    user_update_interval = config_entry.data.get("update_interval", 30)
+    
+    # 調整更新間隔以補償延遲
+    adjusted_update_interval = max(5, user_update_interval - 5)
+    
+    coordinator = SnmpDataUpdateCoordinator(hass, config_entry.data, adjusted_update_interval)
     await coordinator.async_config_entry_first_refresh()
 
     sensors = []
