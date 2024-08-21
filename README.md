@@ -58,7 +58,7 @@ Restart Home Assistant: Restart your Home Assistant instance to load the custom 
 
 ##### Device Name: Enter a friendly name for your Zyxel access point.  
 ##### IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
-##### Community String: Provide the SNMP community string. The default is usually 'public'.  
+##### Community String: Provide the SNMP community string.  
 ##### Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).    
   
 Validate & Save: The integration will validate the inputs and, if successful, create the entities for your device.  
