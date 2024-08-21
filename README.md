@@ -1,5 +1,6 @@
 # Zyxel Enterprise Access Point SNMP Integration  
 
+![ZYXEL.png](images/zyxel.png)
 
 
 ### Developed by Lhb  
