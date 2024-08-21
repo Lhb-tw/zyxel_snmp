@@ -52,10 +52,10 @@ Restart Home Assistant: Restart your Home Assistant instance to load the custom 
 2. Search for 'ZYXEL SNMP': Select the "ZYXEL SNMP" integration from the list.  
 3. Configure the Integration:    
 
-·  Device Name: Enter a friendly name for your Zyxel access point.  
-·  IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
-·  Community String: Provide the SNMP community string. The default is usually 'public'.  
-·  Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).    
+ ·  Device Name: Enter a friendly name for your Zyxel access point.  
+ ·  IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
+ ·  Community String: Provide the SNMP community string. The default is usually 'public'.  
+ ·  Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).    
   
 Validate & Save: The integration will validate the inputs and, if successful, create the entities for your device.  
 
