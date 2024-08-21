@@ -31,8 +31,10 @@ If your device is not listed here, please refer to the device's manual or contac
 
 ### Ensure you have installed pysnmp, voluptuous on your Home Assistant
 
-#### pip install pysnmp
-#### pip install voluptuous
+\```
+pip install pysnmp
+pip install voluptuous
+\```
 
 
 
