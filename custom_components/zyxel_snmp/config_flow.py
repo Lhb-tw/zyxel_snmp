@@ -43,7 +43,7 @@ class SnmpConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             update_interval = user_input.get("update_interval", 30)
             try:
                 update_interval = int(update_interval)
-                if update_interval < 15 or update_interval > 300:
+                if update_interval < 20 or update_interval > 300:
                     errors["update_interval"] = "Invalid update interval"
             except ValueError:
                 errors["update_interval"] = "Invalid update interval"
@@ -72,7 +72,7 @@ class SnmpConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 "name": "Enter the name of the device.",
                 "ip_address": "Enter the IP address of the device, e.g., 192.168.1.1.",
                 "community": "Enter the SNMP community string. The default is 'public'.",
-                "update_interval": "Enter the update interval (15-300 seconds).",
+                "update_interval": "Enter the update interval (20-300 seconds).",
             },
         )
 
@@ -92,7 +92,7 @@ class SnmpOptionsFlowHandler(config_entries.OptionsFlow):
             update_interval = user_input.get("update_interval", 30)
             try:
                 update_interval = int(update_interval)
-                if update_interval < 15 or update_interval > 300:
+                if update_interval < 20 or update_interval > 300:
                     errors["update_interval"] = "Invalid update interval"
             except ValueError:
                 errors["update_interval"] = "Invalid update interval"
