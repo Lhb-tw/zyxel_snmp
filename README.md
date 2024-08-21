@@ -48,14 +48,14 @@ Download the Repository: Clone or download the repository from GitHub.
 Copy the Files: Copy the zyxel_snmp folder into your Home Assistant’s custom_components directory.
 Restart Home Assistant: Restart your Home Assistant instance to load the custom component.
  ### Step 2: Add the Integration via Home Assistant UI
-1. Navigate to Integrations: In Home Assistant, go to Settings > Devices & Services > + Add Integration.  
-2. Search for 'ZYXEL SNMP': Select the "ZYXEL SNMP" integration from the list.  
-3. Configure the Integration:    
+#### 1. Navigate to Integrations: In Home Assistant, go to Settings > Devices & Services > + Add Integration.  
+#### 2. Search for 'ZYXEL SNMP': Select the "ZYXEL SNMP" integration from the list.  
+#### 3. Configure the Integration:    
 
- ·  Device Name: Enter a friendly name for your Zyxel access point.  
- ·  IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
- ·  Community String: Provide the SNMP community string. The default is usually 'public'.  
- ·  Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).    
+##### Device Name: Enter a friendly name for your Zyxel access point.  
+##### IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
+##### Community String: Provide the SNMP community string. The default is usually 'public'.  
+##### Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).    
   
 Validate & Save: The integration will validate the inputs and, if successful, create the entities for your device.  
 
@@ -63,12 +63,12 @@ Validate & Save: The integration will validate the inputs and, if successful, cr
 After the configuration, your Zyxel Access Points will be visible in the Home Assistant dashboard. You can now monitor the following metrics:
   
 #####  Device Information: Shows model, serial-number  
-·  System Uptime: Tracks the total uptime of your access point.  
-·  CPU Usage: Displays the current CPU utilization percentage.  
-·  Memory Usage: Shows the current memory usage percentage.  
-·  Network Interface Status: Monitor the status of 2.4GHz and 5GHz network interfaces.   
+##### System Uptime: Tracks the total uptime of your access point.  
+##### CPU Usage: Displays the current CPU utilization percentage.  
+##### Memory Usage: Shows the current memory usage percentage.  
+##### Network Interface Status: Monitor the status of 2.4GHz and 5GHz network interfaces.   
   
-##Troubleshooting
+## Troubleshooting
 If you encounter any issues during setup or monitoring, ensure that:
 
 Your access point’s SNMP service is enabled.
