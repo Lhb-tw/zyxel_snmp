@@ -54,20 +54,21 @@ Restart Home Assistant: Restart your Home Assistant instance to load the custom 
 
 ####Configure the Integration:
 
-#####Device Name: Enter a friendly name for your Zyxel access point.
-#####IP Address: Input the IP address of your access point (e.g., 192.168.1.1).
-#####Community String: Provide the SNMP community string. The default is usually 'public'.
-#####Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).  
+·  Device Name: Enter a friendly name for your Zyxel access point.
+·  IP Address: Input the IP address of your access point (e.g., 192.168.1.1).
+·  Community String: Provide the SNMP community string. The default is usually 'public'.
+·  Update Interval: Set how frequently the SNMP data should be updated (between 5 to 300 seconds).  
+  
 Validate & Save: The integration will validate the inputs and, if successful, create the entities for your device.
 
  ### Step 3: Monitor Your Devices
 After the configuration, your Zyxel Access Points will be visible in the Home Assistant dashboard. You can now monitor the following metrics:
   
-####Device Information: Shows model, serial-number
-####System Uptime: Tracks the total uptime of your access point.
-####CPU Usage: Displays the current CPU utilization percentage.
-####Memory Usage: Shows the current memory usage percentage.
-####Network Interface Status: Monitor the status of 2.4GHz and 5GHz network interfaces.
+·  Device Information: Shows model, serial-number
+·  System Uptime: Tracks the total uptime of your access point.
+·  CPU Usage: Displays the current CPU utilization percentage.
+·  Memory Usage: Shows the current memory usage percentage.
+·  Network Interface Status: Monitor the status of 2.4GHz and 5GHz network interfaces.
 T
 ##roubleshooting
 If you encounter any issues during setup or monitoring, ensure that:
