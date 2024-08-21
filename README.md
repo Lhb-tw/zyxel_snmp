@@ -3,7 +3,9 @@
 
 
 ### Developed by Lhb  
-  
+
+
+
 ## Overview
 Welcome to the Zyxel Enterprise Access Point SNMP Integration!  
 This custom Home Assistant component allows you to monitor and manage your Zyxel enterprise-grade access points using the Simple Network Management Protocol (SNMP). With this integration, you can easily keep track of your network devices, including their uptime, CPU usage, memory status, and more, all within the Home Assistant interface.
