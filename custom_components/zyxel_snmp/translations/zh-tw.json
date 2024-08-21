@@ -7,11 +7,11 @@
           "name": "設備名稱",
           "ip_address": "設備IP位置",
           "community": "SNMP社區字串 (V1/V2C)",
-          "update_interval": "更新頻率(15 - 300秒)"
+          "update_interval": "更新頻率(20 - 300秒)"
         },
         "description": "輸入所需資訊来完成设置 SNMP 集成",
         "errors": {
-          "Invalid update interval": "不合法更新頻率區間(15 - 300)",
+          "Invalid update interval": "不合法更新頻率區間(20 - 300)",
           "Invalid IP address": "不合法輸入IPv4格式"
         }
       }
