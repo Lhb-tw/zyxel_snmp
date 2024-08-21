@@ -28,7 +28,7 @@ Zyxel NWA130BE
 Zyxel WBE660S
 
 
-If your device is not listed here, please refer to the device's manual or contact Zyxel support to confirm SNMP compatibility.
+If your device is not listed here, please refer to the device's manual or contact Zyxel support to confirm SNMP compatibility.  
 
 ### Ensure you have installed pysnmp, voluptuous on your Home Assistant  
 
@@ -85,12 +85,12 @@ Ensure that your code follows the contribution guidelines provided in the reposi
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Acknowledgments
-Special thanks to the Home Assistant community and Zyxel for providing extensive documentation and support for SNMP.  
+Special thanks to the Home Assistant community and Zyxel for providing extensive documentation and support for SNMP.    
 
   
 
 
 
 
-
+  
 ### Developed by Lhb
