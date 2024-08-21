@@ -48,9 +48,9 @@ Download the Repository: Clone or download the repository from GitHub.
 Copy the Files: Copy the zyxel_snmp folder into your Home Assistant’s custom_components directory.
 Restart Home Assistant: Restart your Home Assistant instance to load the custom component.
  ### Step 2: Add the Integration via Home Assistant UI
-· Navigate to Integrations: In Home Assistant, go to Settings > Devices & Services > + Add Integration.  
-· Search for 'ZYXEL SNMP': Select the "ZYXEL SNMP" integration from the list.  
-· Configure the Integration:    
+1. Navigate to Integrations: In Home Assistant, go to Settings > Devices & Services > + Add Integration.  
+2. Search for 'ZYXEL SNMP': Select the "ZYXEL SNMP" integration from the list.  
+3. Configure the Integration:    
 
 ·  Device Name: Enter a friendly name for your Zyxel access point.  
 ·  IP Address: Input the IP address of your access point (e.g., 192.168.1.1).  
