@@ -62,7 +62,7 @@ Validate & Save: The integration will validate the inputs and, if successful, cr
  ### Step 3: Monitor Your Devices
 After the configuration, your Zyxel Access Points will be visible in the Home Assistant dashboard. You can now monitor the following metrics:
   
-·  Device Information: Shows model, serial-number  
+#####  Device Information: Shows model, serial-number  
 ·  System Uptime: Tracks the total uptime of your access point.  
 ·  CPU Usage: Displays the current CPU utilization percentage.  
 ·  Memory Usage: Shows the current memory usage percentage.  
@@ -93,4 +93,4 @@ Special thanks to the Home Assistant community and Zyxel for providing extensive
 
 
 
-## Created by Lhb
+### Developed by Lhb
