@@ -34,10 +34,11 @@ If your device is not listed here, please refer to the device's manual or contac
 
 
 
-\```
+```
 pip install pysnmp
 pip install voluptuous
-\```
+```
+
 
 
 
