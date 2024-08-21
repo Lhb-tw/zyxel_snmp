@@ -1,0 +1,13 @@
+{
+    "domain": "zyxel_snmp",
+    "name": "ZYXEL SNMP",
+    "version": "1.0",
+    "config_flow": true,
+    "documentation": "https://github.com/Lhb-tw/core",
+    "requirements": ["pysnmp==6.2.5"],
+    "dependencies": [],
+    "translations": ["en", "zh-tw"],
+    "logo": "custom_integrations/zyxel_snmp/logo@2x.png",
+    "icon": "custom_integrations/zyxel_snmp/icon.png",
+    "codeowners": ["@Lhb-tw"]
+}
