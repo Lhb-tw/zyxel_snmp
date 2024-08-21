@@ -12,24 +12,25 @@ Newbie-Friendly Configuration: A simple setup process that guides you through th
 ## Supported Zyxel Devices
 Before proceeding, please ensure that your Zyxel Enterprise Access Point supports SNMP. This integration is designed specifically for Zyxel’s enterprise-grade devices, which include but are not limited to:
 
-Zyxel NWA1123ACv3
-Zyxel WAC500
-Zyxel WAC500h
-Zyxel NWA110AX
-Zyxel Nwa210AX
-Zyxel WAX510D
-Zyxel WAX610D
-Zyxel WAX630S
-Zyxel WAX650S
-Zyxel NWA220AX-6E
-Zyxel NWA620D-6E
-Zyxel WAX640S-6E
-Zyxel NWA130BE
+Zyxel NWA1123ACv3  
+Zyxel WAC500  
+Zyxel WAC500h  
+Zyxel NWA110AX  
+Zyxel Nwa210AX  
+Zyxel WAX510D  
+Zyxel WAX610D  
+Zyxel WAX630S  
+Zyxel WAX650S  
+Zyxel NWA220AX-6E  
+Zyxel NWA620D-6E  
+Zyxel WAX640S-6E  
+Zyxel NWA130BE  
 Zyxel WBE660S
+
 
 If your device is not listed here, please refer to the device's manual or contact Zyxel support to confirm SNMP compatibility.
 
-### Ensure you have installed pysnmp, voluptuous on your Home Assistant
+### Ensure you have installed pysnmp, voluptuous on your Home Assistant  
 
 
 
