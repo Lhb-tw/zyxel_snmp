@@ -1,4 +1,4 @@
-# Zyxel Enterprise Access Point SNMP Integration  
+# Zyxel Enterprise Access Point SNMP Integration for Home Assistant
 
 ![ZYXEL.png](images/zyxel.png)
 
