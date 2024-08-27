@@ -3,8 +3,8 @@
     "name": "ZYXEL SNMP",
     "version": "1.0",
     "config_flow": true,
-    "documentation": "https://github.com/Lhb-tw/zyxel_snmp#readme",
-    "issue_tracker": "https://github.com/Lhb-tw/zyxel_snmp/issues",
+    "documentation": "https://github.com/Lhb-tw/core",
+    "requirements": [],
     "dependencies": [],
     "translations": ["en", "zh-tw"],
     "codeowners": ["@Lhb-tw"]

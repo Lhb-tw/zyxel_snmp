@@ -7,7 +7,7 @@ from homeassistant.const import CONF_IP_ADDRESS, CONF_NAME
 from homeassistant.core import callback
 from homeassistant.helpers import config_validation as cv
 
-from .const import DOMAIN
+from .const import DEVICE_TYPES, DOMAIN
 
 IPV4_REGEX = r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$"
 
@@ -53,10 +53,13 @@ class SnmpConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                     title=user_input[CONF_NAME], data=user_input
                 )
 
-        # Define the form schema with update_interval
+        # Define the form schema with update_interval and device_type
         data_schema = vol.Schema(
             {
                 vol.Required(CONF_NAME): cv.string,
+                vol.Optional("device_type", default="Access Point"): vol.In(
+                    DEVICE_TYPES  # DEVICE_TYPES 应该是一个列表，如 ["Access Point", "Switch"]
+                ),
                 vol.Required(CONF_IP_ADDRESS): cv.string,
                 vol.Required("community"): cv.string,
                 vol.Optional("update_interval", default=30): vol.Coerce(int),
@@ -70,6 +73,7 @@ class SnmpConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             errors=errors,
             description_placeholders={
                 "name": "Enter the name of the device.",
+                "device_type": "Select the device type (Access Point or Switch).",
                 "ip_address": "Enter the IP address of the device, e.g., 192.168.1.1.",
                 "community": "Enter the SNMP community string. The default is 'public'.",
                 "update_interval": "Enter the update interval (20-300 seconds).",
