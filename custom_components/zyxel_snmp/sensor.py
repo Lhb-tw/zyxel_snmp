@@ -205,7 +205,7 @@ async def fetch_snmp_data(target_ip, community_string, oids, port_quantity):
                     result[description] = "Not Support"
                 else:
                     # 添加 "%" 符号
-                    result[description] = f"{value} %"
+                    result[description] = value
 
         else:
             errorIndication, errorStatus, errorIndex, varBinds = await getCmd(
