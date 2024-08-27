@@ -160,9 +160,9 @@ async def fetch_snmp_data(target_ip, community_string, oids, port_quantity):
                     else:
                         poe_status_float = float(poe_status_value) / 1000
                         if poe_status_float == 0:
-                            result[f"Port {i} PoE"] = "0"
+                            result[f"Port {i} PoE"] = "0 Watt"
                         else:
-                            result[f"Port {i} PoE"] = f"{poe_status_float:.1f}"
+                            result[f"Port {i} PoE"] = f"{poe_status_float:.1f} Watt"
 
         elif oid == "1.3.6.1.4.1.890.1.15.3.1.6.0":  # Firmware Version OID
             errorIndication, errorStatus, errorIndex, varBinds = await getCmd(
@@ -184,6 +184,28 @@ async def fetch_snmp_data(target_ip, community_string, oids, port_quantity):
                     if "|" in value:
                         value = value.split("|")[0].strip()
                     result[description] = value
+
+        elif oid in [
+            "1.3.6.1.4.1.890.1.15.3.2.4.0",
+            "1.3.6.1.4.1.890.1.15.3.2.5.0",
+        ]:  # CPU and RAM OIDs
+            errorIndication, errorStatus, errorIndex, varBinds = await getCmd(
+                SnmpEngine(),
+                CommunityData(community_string),
+                UdpTransportTarget((target_ip, 161)),
+                ContextData(),
+                ObjectType(ObjectIdentity(oid)),
+            )
+
+            if errorIndication or errorStatus:
+                result[description] = "Error"
+            else:
+                value = varBinds[0][1].prettyPrint()
+                if "No Such Instance" in value:
+                    result[description] = "Not Support"
+                else:
+                    # 添加 "%" 符号
+                    result[description] = f"{value} %"
 
         else:
             errorIndication, errorStatus, errorIndex, varBinds = await getCmd(
@@ -225,6 +247,7 @@ async def fetch_snmp_data(target_ip, community_string, oids, port_quantity):
                         result[description] = uptime.prettyPrint()
                 else:
                     result[description] = value
+
     return result
 
 
