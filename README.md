@@ -3,7 +3,7 @@
 ![ZYXEL.png](images/zyxel.png)
 
 
-### Developed by Lhb  
+   
 
 
 
@@ -100,9 +100,16 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Acknowledgments
 Special thanks to the Home Assistant community and Zyxel for providing extensive documentation and support for SNMP.      
 
+
+
+
   
 
 
 
+  
+
+
+### Developed by Lhb 
 
  
